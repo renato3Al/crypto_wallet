@@ -5,6 +5,7 @@
 <div>
   <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
   <%= link_to "Back to coins", coins_path %>
-
+  <p>
   <%= button_to "Destroy this coin", @coin, method: :delete %>
+  </p>
 </div>
