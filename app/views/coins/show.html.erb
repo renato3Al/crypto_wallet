@@ -3,9 +3,8 @@
 <%= render @coin %>
 
 <div>
-  <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
-  <%= link_to "Back to coins", coins_path %>
-  <p>
-  <%= button_to "Destroy this coin", @coin, method: :delete %>
-  </p>
+  <%= link_to "Editar", edit_coin_path(@coin) %> |
+  <%= link_to "Voltar", coins_path %>
 </div>
+
+<p><%= button_to "Excluir", @coin, method: :delete, data: { confirm: 'Tem certeza ?' } %></p>
