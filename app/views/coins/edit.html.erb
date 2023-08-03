@@ -2,6 +2,8 @@
 
 <%= render "form", coin: @coin %>
 
+<p><%= button_to "Excluir", @coin, method: :delete, data: { confirm: 'Tem certeza ?' } %></p>
+
 <br/>
 
 <div>
